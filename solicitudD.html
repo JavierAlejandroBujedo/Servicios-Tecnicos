@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Solicitud de un nuevo trámite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no,
+            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="./descarga.ico">
+        <link href="./estilo1.css" rel="stylesheet">
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+    </head>
+    <title>Solicitud de un nuevo trámite</title>
+</head>
+<body class="contenedor-gral">
+    <!-- BANNER DE LA POLICIA -->
+        <div class="imagen-fondo">
+            <picture>
+                <a href="https://www.policiacordoba.gov.ar/" target="_blank"><img
+                        src="./top 1.png" alt="Banner de la policia de la de
+                        Cordoba"></a>
+            </picture>
+            <!--MENU HORIZONTAL Y DESPLEGABLE-->
+            <nav>
+                <ul class="menu-horizontal">
+                    <h1>Solicitud de un nuevo trámite</h1>
+                </ul>
+                <!--FORMULARIO-->
+            </nav>
+            <section class="form-register">
+
+                <div class="container-one">
+                    <h4>Datos de la Organización o Empresa</h4>
+                    <div class="form_box">
+                        <input class="controls" type="text" name="razon-social"
+                            id="textSocial" placeholder=" " required><label
+                            class="form_label">Razon social</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="tel" name="teléfono"
+                            id="teléfono" placeholder=" " required><label
+                            for="textUser" class="form_label">Teléfono</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="email" name="email"
+                            id="email" placeholder=" " required><label for=""
+                            class="form_label">Correo</label>
+                    </div>
+                        <div class="form_box">
+                            <select class="dropdown-dom" type="search"
+                                name="dropdown" id="dropdown" placeholder=" "
+                                required>
+                                        <option class=form_label value=""autocomplete="" >Rubro</option>
+                                        <option value="">SALON DE FIESTAS</option>
+                                        <option value="">ESTABLECIMIENTO EDUCATIVO</option>
+                                        <option value="">ESTACION DE SERVICIO</option>
+                                        <option value="">EDIFICIO</option>
+                                        <option value="">LOCAL BAILABLE/DISCO/PUB/ETC</option>
+                                        <option value="">RESTAURANTE</option>
+                                        <option value="">CONCESIONARIA</option>
+                                        <option value="">PLAYA DE ESTACIONAMINETO</option>
+                                        <option value="">SALON</option>
+                                        <option value="">COMERCIO</option>
+                                        <option value="">ESTABLECIMIENTO DEPORTIVO</option>
+                                        <option value="">MINI-MERCADO</option>
+                            </select>
+                        </div>
+                    <div class="form_box">
+                        <input class="controls" type="number" name="cuil"
+                            id="cuil" placeholder=" " required><label for=""
+                            class="form_label">CUIL</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="text" name=""
+                            id="observaciones" placeholder=" " required><label
+                            for="" class="form_label">Observaciones</label>
+                    </div>
+                </div>
+
+                <div class="container-two">
+                    <h4>Domicilio</h4>
+
+                    <div class="form_box">
+                        <select class="dropdown-dom" type="search"
+                        name="dropdown" id="dropdown" placeholder=" "
+                        required>
+                                <option class=form_label value="">Provincia</option>
+                                <option value="">Jujuy</option>
+                                <option value="">Salta</option>
+                                <option value="">Tucuman</option>
+                                <option value="">Santiago del Estero</option>
+                                <option value="">La Rioja</option>
+                                <option value="">Catamarca</option>
+                                <option value="">Formosa</option>
+                                <option value="">El Chaco</option>
+                                <option value="">Corrientes</option>
+                                <option value="">Entre Rios</option>
+                                <option value="">Misiones</option>
+                                <option value="">Santa Fé</option>
+                                <option value="">San Juan</option>
+                                <option value="">Mendoza</option>
+                                <option value="">Córdoba</option>
+                                <option value="">Buenos Aires</option>
+                                <option value="">San Luis</option>
+                                <option value="">La Pampa</option>
+                                <option value="">Rio Negro</option>
+                                <option value="">Chubut</option>
+                                <option value="">Santa Cruz</option>
+                                <option value="">Tierra del Fuego</option>
+                                <option value=""></option>
+                    </select>
+                    </div>
+                    <div class="form_box">
+                        <select class="dropdown-dom" type="search"
+                            name="dropdown" id="dropdown" placeholder=" "
+                            required>
+                                    <option class=form_label value=""autocomplete="" >Localidad</option>
+                        </select>
+                    </div>
+                    <div class="form_box">
+                        <select class="dropdown-dom" type="search"
+                            name="dropdown" id="dropdown" placeholder=" "
+                            required>
+                                    <option class=form_label value=""autocomplete="" >Barrio</option>
+                        </select>
+                    </div>
+                    <div class="form_box">
+                        <input class="calle" type="text" name="calle" id="calle"
+                            placeholder=" " required><label for=""
+                            class="form_label">Calle</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="number" min="10"
+                            max="10000" name="altura" id="altura" placeholder="
+                            " required><label for="" class="form_label">Altura</label>
+                    </div>
+                </div>
+
+                <div class="container-three">
+                    <h4>Características del inmueble</h4>
+                    <div class="form_box">
+                        <input class="controls" type="text"
+                            name="superficie-cubierta" id="superficie-cubierta"
+                            placeholder=" " required><label for=""
+                            class="form_label">Superficie Cubierta</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="text" name="altura"
+                            id="altura" placeholder=" " required><label for=""
+                            class="form_label">Sup.aire libre</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="text" name="altura"
+                            id="altura" placeholder=" " required><label for=""
+                            class="form_label">Altura</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="controls" type="text" name="nivel"
+                            id="nivel" placeholder=" " required><label for=""
+                            class="form_label">Nivel/s</label>
+                    </div>                  
+                    <div class="form_box">
+                        <input class="controls" type="text" name="nivel"
+                            id="nivel" placeholder=" " required><label for=""
+                            class="form_label">Sup.cubierta subsuelo</label>
+                    </div>
+
+                    <div class="form_box">
+                        <input class="controls" type="text"
+                            name="superficiecubierta" id="superficie-cubierta"
+                            placeholder=" " required><label for=""
+                            class="form_label">Superficie Cubierta</label>
+                    </div>
+                    <div class="form_box">
+                        <input class="observacioness" type="text" name=""
+                            id="observacioness" placeholder=" " required><label
+                            for="" class="form_label">Observaciones</label>
+                    </div>
+                </div>
+
+                <div class="container-four">
+                    <h4>Datos del referente</h4>
+                        <div class="form_box">
+                            <input class="controls" type="number" min="42499022"
+                            max="99499022" name="dni" id="dni" placeholder="
+                            " required><label for="" class="form_label">DNI</label>
+                        </div> 
+                        <div class="form_box">
+                            <input class="controls" type="text" name="apellido"
+                                id="apellido" placeholder=" " required><label
+                                for="" class="form_label">Apellido</label>
+                        </div>
+                        <div class="form_box">
+                            <input class="controls" type="text" name="nombre"
+                                id="nombre" placeholder=" " required><label
+                                for="" class="form_label">Nombre</label>
+                        </div>
+                        <div class="form_box">
+                            <input class="controls" type="email" name="email"
+                                id="email" placeholder=" " required><label
+                                for="" class="form_label">Correo</label>
+                        </div>
+                        <div class="form_box">
+                            <input class="controls" type="tel" name="teléfono"
+                                id="teléfono" placeholder=" " required><label
+                                for="" class="form_label">Teléfono</label>
+                        </div>
+                        <div class="form_box">
+                            <input class="controls" type="number"
+                                name="matricula" id="matricula" placeholder=" "
+                                required><label for="" class="form_label">Matricula</label>
+                        </div>
+                        <div class="form_box">
+                            <select class="dropdown-dom" type="search"
+                            name="dropdown" id="dropdown" placeholder=" "
+                            required>
+                                    <option class=form_label value=""autocomplete="" >Tipo Referente</option>
+                                    <option value="">PROPIETARIO</option>
+                                    <option value="">GESTOR</option>
+                                    <option value="">PROFESIONAL</option>
+                        </select>
+                        </div>
+                        <div class="form_box">
+                            <select class="dropdown-dom" type="search"
+                            name="dropdown" id="dropdown" placeholder=" "
+                            required>
+                                    <option class=form_label value=""autocomplete="" >Autorizado</option>
+                                    <option value="">Si (Adjuntar autorización)</option>
+                                    <option value="">No (Solicitar autorización correspondiente)</option>
+                        </select>
+                        </div>
+                </div>
+
+                <div class="container-five">
+                        <h4>Datos del timbrado</h4>
+                        <div class="form_box">
+                            <input class="timbrado" type="text" name="timbrado"
+                                id="timbrado" placeholder=" " required><label
+                                for="" class="form_label">Timbrado numero
+                                liquido</label>
+                        </div>
+                        <div class="form_box">
+                            <input class="controls" type="text" name="monto"
+                                id="monto" placeholder=" " required><label
+                                for="" class="form_label">Monto $</label>
+                        </div>
+                </div>   
+
+                <div class="container-six">
+                            <h4>Documentación</h4>
+                            <input class="controls" type="file" name="archivos"
+                            id="archivos" required style="padding-right: 20px;padding-left: 5px; width: 90%; padding: .5rem 1rem; left: 3%;">
+                            <a href="#"><input class="botons" type="submit"
+                            value="Grabar" style="width: 90%;left: 3%;"></a>
+                            <a href="#"><input class="botons1" type="submit"
+                                value="Cancelar" style="width: 90%;left: 3%;"></a>
+                </div>
+
+            </section>
+                <!--PIE DE PAGINA-->
+                <footer>
+                    <div class="container">
+                        <div class="sec aboutus">
+                            <h3>Jefatura de Policía.</h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                &nbsp;&nbsp;Av. Colón 1254 - B° Alberdi -
+                                Córdoba / Argentina. <br>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                &nbsp;Conmutador Central: 540351 - 4287000 <br>
+                                Denuncias Anónimas: 0810 888 3368 <br>
+                                Emergencias: 911 POLICÍA.</p>
+                            <ul class="sci">
+                                <li><a
+                                        href="https://www.facebook.com/PoliciaCordobaArgentina/"
+                                        target="_blank"><i class="fa
+                                            fa-facebook-square"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/PoliciaCbaOf"
+                                        target="_blank"><i class="fa
+                                            fa-twitter-square"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.youtube.com/channel/UCuixUbpDlNtKnY8EYMn1BuA"
+                                        target="_blank"><i class="fa
+                                            fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.instagram.com/policiacbaof/?hl=es-la"
+                                        target="_blank"><i class="fa
+                                            fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.flickr.com/photos/policiacordoba/"
+                                        target="_blank"><i class="fa fa-flickr"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="sec quickLinks">
+                            <h3>Departamento Servicios Técnicos.</h3>>
+                            <p> División Proyectos y Asesoramientos Técnicos.<br>
+                                Inspecciones 0351 4331931 - <br> Proyectos
+                                4331935. <br>
+                                Email:
+                                serviciostecnicos.bomberos@policiacordoba.gov.ar
+                                <br>
+                                Mariano Moreno N° 250 B° Alberdi, Córdoba
+                                Capital.<br>
+                                Cornelio Saavedra N° 650 <br> Ciudad de Villa
+                                Allende - 03543 438145. <br>
+                                <i class="fa fa-exclamation-triangle"
+                                    aria-hidden="true"></i>
+                                &nbsp;&nbsp;Importante: Los trámites realizados
+                                por terceros deberán <br> estar legalmente
+                                autorizados.</p>
+                        </div>
+                    </div>
+
+
+                </footer>
+                <div class="copyright">
+                    <p>Copyright © 2022 - Policia de la Provincia de Córdoba
+                    </p>
+                </div>
+                <!-- Este codigo Front-end fue dessarrollado por el DEPARTAMENTO INNOVACIONES TECNOLOGICAS -->
+            </div>
+        <!--/div-->
+    </body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="./descarga.ico">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Consulta de Estado de Trámite Para Asesoramiento Técnico</title>
+    </head>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.contenedor-gral{
+    font-family: 'Open Sans', 'Poppins',sans-serif;
+    background-image: url(./fondo12.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    max-width: 1902vmax;
+    min-width: 320px;
+    min-height: 5vh;
+    margin: auto;
+    background-size: 100% ;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0px;
+    
+}
+
+.login-form{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px 30px;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.1);
+    border-radius: 5%;
+    text-align: center;
+}
+
+.login-form .form-title{
+    font-family:"Monserrat", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px 30px;
+    color:white;
+}
+
+.login-form .form-input{
+    margin:10px 0px;
+}
+.login-form .form-input label,
+.login-form .captcha label{
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 5px;
+}
+.login-form .form-input input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    font-size: 15px;
+}
+.login-form .captcha{
+    margin:15px 0px;
+}
+.login-form .captcha .preview{
+    color: #555;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px solid #888;
+    font-family: "monospace";
+
+}
+.login-form .captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}
+.login-form .captcha .captcha-form{
+    display: flex;
+}
+.login-form .captcha .captcha-form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
+}
+.login-form .captcha .captcha-form .captcha-refresh{
+    width: 40px;
+    border: none;
+    outline: none;
+    background: #888;
+    color: #eee;
+    cursor: pointer;
+}
+
+.login-form #login-btn1{
+    margin-top: 5px;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #84b6f4;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+.login-form #login-btn2{
+    margin-top: 5px;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #ffb347;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+.login-form #login-btn3{
+    margin-top: 5px;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #5dc460;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+
+.grilla{
+    position: relative;
+    top:640px; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.grilla .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.grilla .navbar ul{
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.grilla .navbar ul li{
+    position: relative;
+    float: left;
+    font-size: smaller;
+
+}
+.grilla .navbar ul li{
+    font-size: 0.25rem;
+    padding: 1.25rem;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+}
+
+.grilla .navbar ul li:hover{
+    color: red;
+}
+.grilla .navbar ul li ul{                                                  
+    position: absolute;
+    margin-top: 2.25rem;
+    left: 0;
+    width: 12.5rem;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.grilla .navbar ul li ul li{
+    width: 100%;
+    border-top: 0.063rem solid rgba(0, 0, 0, .1);
+    border-top: 0.063rem solid red;
+}
+.grilla .navbar ul li ul li ul{
+    left:200px;
+    top: 0;
+}
+.grilla .navbar ul li:focus-within > ul,
+.grilla .navbar ul li:hover > ul{
+    display:initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.grilla label{
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none;
+    font-weight: bolder;
+    font-size: smaller;
+
+}
+
+h5{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 90%;
+    max-width: 1650px;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px 30px;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.1);
+    border-radius: 5%;
+    text-align: center;
+    font-weight: bolder;
+    color: #eee;
+    bottom: -800px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.social-icons-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(./facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url();
+}
+.social-icon:nth-of-type(3){
+    background-image: url();
+}
+.social-icon:nth-of-type(4){
+    background-image: url();
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+footer{
+    top: 50rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    right: 26px;
+
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h3{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h3:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #999;
+    background-size: 2rem;
+}
+
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+
+}
+
+.sci li a{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+footer .container .sec .quickLinks{
+    width: 15%;
+    box-sizing: border-box;
+}
+
+
+.copyright{
+    bottom: 15px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    color: #999;
+    padding: -2px 100px;
+    
+}
+@media (max-width: 991px ){       
+    .grilla{
+        padding:1.25rem;
+    }
+    .grilla label{
+        display: initial;
+        color: white;
+        margin: 0px auto;
+        
+    }
+    .grilla .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: rgba(0, 0, 0, .1);
+        display:none;
+    }
+    .grilla .navbar ul li{
+        width:100%;
+        background: #0000;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .grilla .navbar ul li ul{
+        position: relative;
+        width:100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .grilla .navbar ul li ul li{
+        background: rgba(0, 0, 0, 0,);
+    }
+    .grilla .navbar ul li ul li ul{
+        width:100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    h5{
+        position: relative;
+        bottom: -1500px;
+    }
+
+    footer 
+    {
+        padding: 13px;
+        margin: auto;
+        top:93rem;
+        left: 0px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    footer .container
+    {
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-bottom: 40px;
+    }
+    footer .container .sec.sec.aboutus, .quickLinks
+    {
+        width: 100%;
+        font-size: smaller;
+    }
+}
+
+
+@media (max-width: 1720px ){       
+    .grilla{
+        padding:1.25rem;
+    }
+    .grilla label{
+        display: initial;
+        color: white;
+        margin: 0px auto;
+    }
+    .grilla .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: rgba(0, 0, 0, .1);
+        display:none;
+    }
+    .grilla .navbar ul li{
+        width:100%;
+        background: #0000;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .grilla .navbar ul li ul{
+        position: relative;
+        width:100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .grilla .navbar ul li ul li{
+        background: rgba(0, 0, 0, 0,);
+    }
+    .grilla .navbar ul li ul li ul{
+        width:100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    h5{
+        position: relative;
+        bottom: -1500px;
+    }
+
+    
+
+    footer 
+    {
+        padding: 13px;
+        margin: auto;
+        top:93rem;
+        left: 0px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    footer .container
+    {
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-bottom: 40px;
+    }
+    footer .container .sec.sec.aboutus, .quickLinks
+    {
+        width: 100%;
+        font-size: smaller;
+    }
+}
+ 
+    </style>
+    <body class="contenedor-gral">
+            <!--BANNER DE LA POLICIA--> 
+                <div class="imagen-fondo">
+                    <picture>
+                        <a href="https://www.policiacordoba.gov.ar/" target="_blank"><img
+                                src="./top 1.png" alt="Banner de la policia de la de
+                                Cordoba"></a>
+                    </picture>
+                    <div class="login-form">
+                        <div class="form-title">
+                            Consulta de estado de trámite para asesoramiento técnico
+                        </div>
+                        <div class="form-input">
+                            <label for="username"><b>Nº Expediente</b></label>
+                            <input type="text" id="username">
+                        </div>
+                        <div class="form-input">
+                            <label for="text"><b>Codigo</b></label>
+                            <input type="text" id="password">
+                        </div>
+                        <div class="captcha">
+                        <label for="captcha-input"><b>Ingrese el código visualizado</b></label> 
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                                <input type="text" id="captcha-form" placeholder="Ingrese captcha">
+                                <button class="captcha-refresh">
+                                <i class="fa fa-refresh"></i></button>
+                        </div>
+                        </div>
+                        <div class="form-input">
+                            <button id="login-btn1"><b>Buscar</b></button>
+                            <button id="login-btn2"><b>Limpiar</b></button>
+                            <button id="login-btn3"><b>Volver</b></button>
+                        </div>
+                    </div>
+                    <div class="grilla">
+                        <input type="checkbox" id="menu-bar">
+                        <label for="menu-bar"><i class="fa fa-angle-double-down" aria-hidden="true" style="font-size:30px;color:white"></i><!--<i class="fa fa-bars" style="font-size:15px;color:white"></i>--></label>
+                        <nav class="navbar">
+                            <ul>
+                                <li><span><b>N° Expediente Web</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Nombre razon social</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Teléfono</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>   
+                                <li><span><b>Correo electronico</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Fecha ingreso</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Domicilio</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Numero</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Apellido tramitador</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Nombre tramitador</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>DNI</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Estado</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                                <li><span><b>Referencia Estado</b></span>
+                                    <ul>
+                                        <li>#</li>
+                                    </ul>
+                                </li>
+                            </ul>   
+                        </nav>
+                    </div>
+                    <h5>Todo trámite que se realiza en la  Dirección Bomberos de la Policía de la Provincia de Córdoba, NO TIENE COSTO ALGUNO , salvo lo estipulado en el códigoTributario ,el cuál se abona en sucursales habilitadas del Banco de la Provincia de Córdoba</h5>
+
+                    <footer>
+                        <div class="container">
+                                <div class="sec aboutus">
+                                    <h3>Jefatura de Policía.</h3>
+                                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Av. Colón 1254 - B° Alberdi -
+                                        Córdoba / Argentina. <br>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        &nbsp;Conmutador Central: 540351 - 4287000 <br>
+                                        Denuncias Anónimas: 0810 888 3368 <br>
+                                        Emergencias: 911 POLICÍA.</p>
+                                    <ul class="sci">
+                                        <li><a
+                                            href="https://www.facebook.com/PoliciaCordobaArgentina/"
+                                            target="_blank"><i class="fa
+                                                fa-facebook-square"
+                                                aria-hidden="true"></i></a></li>
+                                        <li><a href="https://twitter.com/PoliciaCbaOf"
+                                            target="_blank"><i class="fa
+                                                fa-twitter-square"
+                                                aria-hidden="true"></i></a></li>
+                                        <li><a
+                                            href="https://www.youtube.com/channel/UCuixUbpDlNtKnY8EYMn1BuA"
+                                            target="_blank"><i class="fa
+                                                fa-youtube-play" aria-hidden="true"></i></a></li>
+                                        <li><a
+                                            href="https://www.instagram.com/policiacbaof/?hl=es-la"
+                                            target="_blank"><i class="fa
+                                                fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a
+                                            href="https://www.flickr.com/photos/policiacordoba/"
+                                            target="_blank"><i class="fa fa-flickr"
+                                                aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="sec quickLinks">
+                                    <h3>Departamento Servicios Técnicos.</h3>>
+                                    <p> División Proyectos y Asesoramientos Técnicos.<br>
+                                    Inspecciones 0351 4331931 - <br> Proyectos
+                                    4331935. <br>
+                                    Email:
+                                    serviciostecnicos.bomberos@policiacordoba.gov.ar
+                                    <br>
+                                    Mariano Moreno N° 250 B° Alberdi, Córdoba
+                                    Capital.<br>
+                                    Cornelio Saavedra N° 650 <br> Ciudad de Villa
+                                    Allende - 03543 438145. <br>
+                                    <i class="fa fa-exclamation-triangle"
+                                        aria-hidden="true"></i>
+                                    Importante: Los trámites realizados
+                                    por terceros deberán <br> estar legalmente
+                                    autorizados.
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright © 2022 - Policia de la Provincia de Córdoba
+                            </p>
+                        </div>        
+                    </footer> 
+                        <!--Este codigo Front-end fue dessarrollado por el DEPARTAMENTO INNOVACIONES TECNOLOGICAS-->
+    </body>
+</html>

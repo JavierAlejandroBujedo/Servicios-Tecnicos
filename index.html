@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Servicios Técnicos - División Proyectos y Asesoramientos Técnicos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="./descarga.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', 'Poppins',sans-serif;  
+}
+
+.container-fondo{
+    background: url(./fondo17.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+img {
+    width: 100%;
+    max-width: 1902vmax;
+    min-width: 320px;
+    min-height: 5vh;
+    margin: auto;
+    background-size: 100% ;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0px;
+}
+  
+header{
+    position: relative;
+    top:2; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1rem;
+}
+
+header .navbar ul{
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    font-size: 1rem;
+}
+header .navbar ul li a{
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+}
+
+header .navbar ul li a:hover{
+    color: red;
+}
+header .navbar ul li ul{                                                  
+    position: absolute;
+    margin-top: 0.25rem;
+    left: 0;
+    width: 12.5rem;
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 0.063rem solid rgba(0, 0, 0, .1);
+    border-top: 0.063rem solid red;
+}
+header .navbar ul li ul li ul{
+    left:200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display:initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none;
+    font-weight: bolder;
+}
+footer {
+    top: 35rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo{
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.social-icons-container{
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 3.125rem;
+    border: 0.063rem solid #f2f2f2;
+    background-image: url(./facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url();
+}
+.social-icon:nth-of-type(3){
+    background-image: url();
+}
+.social-icon:nth-of-type(4){
+    background-image: url();
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+footer{
+    top: 80rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    right: 1.625rem;
+
+}
+footer .container .sec{
+    margin-right: 1.875rem;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h3{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.938rem;
+}
+footer .container h3:before{
+    content: '';
+    position: absolute;
+    bottom: -0.313rem;
+    left: 0;
+    width: 3.125rem;
+    height: 0.125rem;
+    background: #f00;
+}
+footer p{
+    color: #999;
+    background-size: 2rem;
+}
+
+
+.sci{
+    margin-top: 1.25rem;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+
+}
+
+.sci li a{
+    display:inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 1.25rem;
+}
+footer .container .sec .quickLinks{
+    width: 15%;
+    box-sizing: border-box;
+}
+
+
+.copyright{
+    top: 2rem;
+    width: 100%;
+    /*background: black;*/
+    text-align: center;
+    color: #999;
+    padding: -2px 100px;
+    
+}
+
+
+
+
+@media(max-width:61.938rem){
+    header{
+        padding:1.25rem;
+    }
+    header label{
+        display: initial;
+        color: white;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: rgba(0, 0, 0, .1);
+        display:none;
+    }
+    header .navbar ul li{
+        width:100%;
+        background: #0000;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width:100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    header .navbar ul li ul li{
+        background: rgba(0, 0, 0, 0,);
+    }
+    header .navbar ul li ul li ul{
+        width:100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    footer 
+    {
+        top: 34rem;
+        padding: 40px;
+        margin: auto;
+    }
+    footer .container
+    {
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-bottom: 40px;
+    }
+    footer .container .sec.sec.aboutus, .quickLinks
+    {
+        width: 100%;
+        font-size: smaller;
+    }
+}
+
+    </style>
+    <body class="container-fondo">
+        
+            <div class="imagen-fondo">
+                <picture>
+                    <a href="https://www.policiacordoba.gov.ar/" target="_blank"><img
+                            src="./top 1.png" alt="Banner de la policia de la de
+                            Cordoba"></a>
+                </picture>
+                    <header>
+                        <a href="#" class="logo">Servicios Técnico - División Proyectos y <br> Asesoramientos Técnicos</a>
+                        <input type="checkbox" id="menu-bar">
+                        <label for="menu-bar"><i class="fa fa-bars" style="font-size:15px;color:white"></i></label>
+                        <nav class="navbar">
+                            <ul>
+                                <li><a href="#">Información importante <br> para iniciar un trámite +</a>
+                                    <ul>
+                                        <li><a href="#">Guía de requisitos</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Requisitos para inciar <br> un trámite +</a>
+                                    <ul>
+                                        <li><a href="#">Pedido de inspeccion anexo I</a></li>
+                                        <li><a href="#">Pedido proyecto anezo II</a></li>
+                                        <li><a href="#">Memoria descriptiva III</a></li>
+                                        <li><a href="#">Plan de evacuacion IV</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="solicitudD.html" target="_blank">Ir a nueva solicitud</a></li>
+                                <li><a href="consulta.html" target="_blank">Ir a consulta</a></li>
+                            </ul>   
+                        </nav>
+                    </header>
+                <footer>
+                    <div class="container">
+                        <div class="sec aboutus">
+                            <h3>Jefatura de Policía.</h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                &nbsp;&nbsp;Av. Colón 1254 - B° Alberdi -
+                                Córdoba / Argentina. <br>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                &nbsp;Conmutador Central: 540351 - 4287000 <br>
+                                Denuncias Anónimas: 0810 888 3368 <br>
+                                Emergencias: 911 POLICÍA.</p>
+                            <ul class="sci">
+                                <li><a
+                                        href="https://www.facebook.com/PoliciaCordobaArgentina/"
+                                        target="_blank"><i class="fa
+                                            fa-facebook-square"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/PoliciaCbaOf"
+                                        target="_blank"><i class="fa
+                                            fa-twitter-square"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.youtube.com/channel/UCuixUbpDlNtKnY8EYMn1BuA"
+                                        target="_blank"><i class="fa
+                                            fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.instagram.com/policiacbaof/?hl=es-la"
+                                        target="_blank"><i class="fa
+                                            fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a
+                                        href="https://www.flickr.com/photos/policiacordoba/"
+                                        target="_blank"><i class="fa fa-flickr"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="sec quickLinks">
+                            <h3>Departamento Servicios Técnicos.</h3>
+                            <p> División Proyectos y Asesoramientos Técnicos.<br>
+                                Inspecciones 0351 4331931 - <br> Proyectos
+                                4331935. <br>
+                                Email:
+                                serviciostecnicos.bomberos@policiacordoba.gov.ar
+                                <br>
+                                Mariano Moreno N° 250 B° Alberdi, Córdoba
+                                Capital.<br>
+                                Cornelio Saavedra N° 650 <br> Ciudad de Villa
+                                Allende - 03543 438145. <br>
+                                <i class="fa fa-exclamation-triangle"
+                                    aria-hidden="true"></i>
+                                &nbsp;&nbsp;Importante: Los trámites realizados
+                                por terceros deberán <br> estar legalmente
+                                autorizados.</p>
+                        </div>
+                    </div>       
+                    <div class="copyright">
+                        <p>Copyright © 2022 - Policia de la Provincia de Córdoba</p>
+                    </div>
+                </footer>
+        
+    </body>
+</html>
